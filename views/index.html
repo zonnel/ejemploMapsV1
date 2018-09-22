@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/stylo.css" media="all">
+	<link href="bootstrap/css/bootstrap-theme.css" rel="stylesheet" media="all">
+
+	<title>Uso api maps</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<script type="text/javascript" src="js/ejecuta.js"></script>
+	    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXTM8tcD_fVL09AEKUKhFyundS8el6C70&callback=initMap">
+    </script>										   <!--AIzaSyAXTM8tcD_fVL09AEKUKhFyundS8el6C70-->
+    												   <!--AIzaSyBz_v2RJjOKfPUtGKaQeWMOaQFAC9-XQqU   key profe-->
+
+	<script type="text/javascript" src="js/ejecuta2.js"></script>
+</head>
+<body>
+	 <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Escuelas SEP</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Principal</a></li>
+        <li class="active"><a href="#">Municipio: </a></li>
+            <select class="selecciona" id="municipio">
+        
+      </select>
+
+      <li class="active" style="position: absolute;left: 60%;height: 100%;width: auto;"> <a href=""> NIvel Escolar: </a></li>
+      <select class="selecciona2" id="nivel">
+        <option value="primaria">Primaria</option>
+        <option value="secundaria">Secundaria</option>
+        <option value="prepa">Media superior</option>
+        <option value="uni">Superior</option>
+      </select>
+      
+
+    </ul>
+  </div>
+</nav> 
+
+  <div class="progress">
+  		<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+  		aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    	40% Complete (success)
+  		</div>
+	</div>
+	
+	
+
+	<div id="map">
+		
+	</div>
+
+
+
+
+
+</body>
+</html>
