@@ -164,7 +164,7 @@ var infowindow;
               text.textContent = datos[i].INMUEBLE_C_VIALIDAD_PRINCIPAL;
               infowincontent.appendChild(text);
               informacion.push(infowincontent);
-          
+
           var myLatLng = new google.maps.LatLng(datos[i].INMUEBLE_LATITUD,datos[i].INMUEBLE_LONGITUD);
           var col= buscarColor(tipo);
           marker = new google.maps.Marker({
@@ -194,7 +194,7 @@ var infowindow;
         }
       }
 
-      agregarinformacion();
+      //agregarinformacion();
    }
 
 

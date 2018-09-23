@@ -27,7 +27,7 @@ app.get('/',function(req,res){
 app.get('/municipios',function(req,res){
 	conexion.query('SELECT * from muncipios',function(err,rows,fields){
 		if(err) throw err;
-		console.log(rows[0]);
+		//console.log(rows[0]);
 
 		res.json(rows);
 	});
